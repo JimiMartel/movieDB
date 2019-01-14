@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="logo">Baza Filmova</h1>
+        <nav class="nav">
+            <a href="index.html" class="nav-btn">Svi filmovi</a>
+            <a href="dodajfilm.html" class="nav-btn">Dodaj film</a>
+        </nav>
+    </header>
+    
+    <h1 class="naslov-dodaj">Dodaj film</h1>
+
+    <main class="main">
+        <form action="https://baza-filmova.herokuapp.com/dodaj-film/" method="POST">
+            <div class="input-container">
+                <label for="naziv">Naziv:</label>
+                <input type="text" name="naziv" id="naziv" required>
+            </div>
+
+            <div class="input-container">
+                <label for="godina">Godina:</label>
+                <input type="text" name="godina" id="godina" required>
+            </div>
+
+            <div class="input-container">
+                <label for="slika">Slika:</label>
+                <input type="text" name="slika" id="slika" required>
+            </div>
+
+            <div class="btn-container"><button>Posalji</button></div>
+        </form>
+    </main>
+    <div class="img-preview-container"><img src="" alt="" class="img-preview"></div>   
+
+    <script src="js/dodajfilm.js"></script>
+</body>
+</html>
